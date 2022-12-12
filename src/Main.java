@@ -85,6 +85,18 @@ public class Main {
         // incompatible data types.
 
         // 13.
+        int a = 4;
+        a += 5; // a = a + 5;
+
+        int b = 3;
+        int c = 4;
+        c *= b; // c = c * b;
+
+        int d = 10;
+        int e = 2;
+        d /= e; // d = d / e;
+        e -= d; // e = e - d;
+
 
 
     }
