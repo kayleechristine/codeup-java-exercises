@@ -98,9 +98,9 @@ public class Main {
         e -= d; // e = e - d;
 
         // 14.
-        // Compilation will fail if a number is outside the range of it's declared data type.
-        // A compilation error will be thrown even if the number started within range and was
-        // incremented past the data type's min/max.
+        // If a variable is decremented or incremented past the min/max of it's assigned data type, the program
+        // will not allow it to be changed. The variable will remain at the min/max range during compilation.
+        // This is different from what I was expecting. I thought it would result in a compilation error.
 
     }
 
