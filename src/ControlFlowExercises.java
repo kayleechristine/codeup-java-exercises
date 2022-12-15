@@ -61,7 +61,7 @@ public class ControlFlowExercises {
         for (int cc = 2; cc > 0; cc *= cc) {
             System.out.println(cc);
         }
-        System.out.println("\n");
+        System.out.println("");
 
         // 2. Fizzbuzz Test
         System.out.println("***** Fizzbuzz Test");
@@ -81,7 +81,7 @@ public class ControlFlowExercises {
         } while (f <= 100);
 
         // 3. Table of Powers
-        System.out.println("***** Table of Powers");
+        System.out.println("\n***** Table of Powers");
 
         // Scanner Class
         Scanner scanner = new Scanner(System.in);
