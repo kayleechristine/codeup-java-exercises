@@ -63,8 +63,25 @@ public class ControlFlowExercises {
         }
         System.out.println("\n");
 
-        // 2. The Fizzbuzz Test
-        System.out.println("***** The Fizzbuzz Test");
+        // 2. Fizzbuzz Test
+        System.out.println("***** Fizzbuzz Test");
+
+        int f = 1;
+        do {
+            if (f % 3 == 0 && f % 5 == 0) {
+                System.out.println("fizzbuzz");
+            } else if (f % 3 == 0) {
+                System.out.println("fizz");
+            } else if (f % 5 == 0) {
+                System.out.println("buzz");
+            } else {
+                System.out.println(f);
+            }
+            f++;
+        } while (f <= 100);
+
+        // 3. Table of Powers
+        System.out.println("***** Table of Powers");
 
         // Scanner Class
         Scanner scanner = new Scanner(System.in);
@@ -82,11 +99,14 @@ public class ControlFlowExercises {
             System.out.println(num + "      | " + numSquared + "       | " + numCubed);
         }
 
+        // 4. Letter Grades
+        System.out.println("\n***** Letter Grades");
+
         System.out.print("***** Would you like to continue? (Y/N) ");
         String cont = scanner.next();
 
         if (Objects.equals(cont, "Y")) {
-            System.out.print("***** Numerical Grade: (0-100) ");
+            System.out.print("\nNumerical Grade: (0-100) ");
             int grade = scanner.nextInt();
             System.out.print("Your current grade is: ");
             if (grade <= 59) {
