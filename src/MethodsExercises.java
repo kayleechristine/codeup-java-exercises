@@ -120,10 +120,6 @@ public class MethodsExercises {
         System.out.println("\n**** 5. Game Development 101");
         System.out.println("Continued in the HighLow java class!");
 
-
-
-
-
     }
 
 }
