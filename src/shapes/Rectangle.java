@@ -16,7 +16,7 @@ public class Rectangle {
     }
     public double getPerimeter() {
         double perimeter = (this.length * 2) + (this.width * 2);
-        System.out.printf("Perimete: %s\n", perimeter);
+        System.out.printf("Perimeter: %s\n", perimeter);
         return perimeter;
     }
 }
