@@ -1,9 +1,27 @@
 package shapes;
 
-public class Square extends Rectangle {
+public class Square extends Quadrilateral implements Measurable {
 
     public Square(double side) {
         super(side);
+    }
+
+    public double setLength(double side) {
+        System.out.println("\nThe square size has been updated.");
+        this.length = side;
+        this.width = side;
+        getLength();
+        getWidth();
+        return side;
+    }
+
+    public double setWidth(double side) {
+        System.out.println("\nThe square size has been updated.");
+        this.length = side;
+        this.width = side;
+        getLength();
+        getWidth();
+        return side;
     }
 
 ///////// Inheritance & Polymorphism: /////////

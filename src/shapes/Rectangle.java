@@ -3,40 +3,20 @@ package shapes;
 public class Rectangle extends Quadrilateral implements Measurable {
 
     public Rectangle(double length, double width) {
-        System.out.println("Creating a rectangle...");
-        setLength(length);
-        setWidth(width);
-        System.out.println("A rectangle was created.");
-    }
-
-    public Rectangle(double side) {
-        System.out.println("Creating a square...");
-        setLength(side);
-        setWidth(side);
-        System.out.println("A square was created.");
-    }
-
-    public double getArea() {
-        double area = this.length * this.width;
-        System.out.println("Area: " + area);
-        return area;
-    }
-
-    public double getPerimeter() {
-        double perimeter = (this.length * 2) + (this.width * 2);
-        System.out.println("Perimeter: " + perimeter);
-        return perimeter;
+        super(length, width);
     }
 
     public double setLength(double length) {
-        System.out.println("Length: " + length);
+        System.out.println("\nThe rectangle size has been updated.");
         this.length = length;
+        getLength();
         return length;
     }
 
     public double setWidth(double width) {
-        System.out.println("Width: " + width);
+        System.out.println("\nThe rectangle size has been updated.");
         this.width = width;
+        getWidth();
         return width;
     }
 
