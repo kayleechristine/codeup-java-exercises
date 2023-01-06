@@ -3,7 +3,7 @@ import java.util.Random;
 public class ServerNameGenerator {
 
     public static String[] adjectives = {"aggressive", "ambitious", "brave", "delightful", "victorious", "faithful", "clumsy", "grumpy", "obnoxious", "uptight"};
-    public static String[] nouns = {"llama", "axolotl", "alpaca", "platypus", "chinchilla", "iguana", "fruit bat", "snek", "hyena", "doggo"};
+    public static String[] nouns = {"llama", "axolotl", "alpaca", "platypus", "chinchilla", "iguana", "fruitbat", "snek", "hyena", "doggo"};
 
     public static String randomizer(String[] array) {
 

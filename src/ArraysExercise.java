@@ -39,4 +39,5 @@ public class ArraysExercise {
         addPerson(people, new Person("Fido"));
 
     }
+
 }
