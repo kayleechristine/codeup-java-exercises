@@ -16,13 +16,15 @@ public class Student {
 
     // Methods
     public String getName() {
-        System.out.println("Name: " + this.name);
+        // System.out.println("Name: " + this.name);
         return this.name;
     }
 
-    public void addGrade(double score) {
-        System.out.println("Got a " + score + " on the assignment!");
-        this.grade.add(score);
+    public void addGrade(double... scores) {
+        for (double score : scores) {
+            // System.out.println("Adding " + score + "...");
+            this.grade.add(score);
+        }
     }
 
     public double getGradeAverage() {
@@ -31,7 +33,7 @@ public class Student {
             total += score;
         }
         double grade = total / this.grade.size();
-        System.out.println("Grade: " + grade);
+        // System.out.println("Grade: " + grade);
         return grade;
     }
 
