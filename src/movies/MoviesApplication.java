@@ -10,7 +10,7 @@ public class MoviesApplication {
 
         String userInput;
 
-        do {
+//        do {
 
             System.out.println("\nWhat would you like to do?\n--------------------");
             System.out.println("0 - Exit\n" +
@@ -26,13 +26,14 @@ public class MoviesApplication {
             switch (userInput) {
                 case "0":
                     System.out.println("\nExiting...\n");
+                    System.exit(0);
                     break;
                 case "1":
                     System.out.println("\nAll the Movies:\n--------------------");
                     for (Movie movie : findAll()) {
                         System.out.println(movie.getMovieName());
                     }
-                    break;
+                    userMenu();
                 case "2":
                     System.out.println("\nAnimated Movies:\n--------------------");
                     for (Movie movie : findAll()) {
@@ -40,7 +41,7 @@ public class MoviesApplication {
                             System.out.println(movie.getMovieName());
                         }
                     }
-                    break;
+                    userMenu();
                 case "3":
                     System.out.println("\nDrama Movies:\n--------------------");
                     for (Movie movie : findAll()) {
@@ -48,7 +49,7 @@ public class MoviesApplication {
                             System.out.println(movie.getMovieName());
                         }
                     }
-                    break;
+                    userMenu();
                 case "4":
                     System.out.println("\nHorror Movies:\n--------------------");
                     for (Movie movie : findAll()) {
@@ -56,7 +57,7 @@ public class MoviesApplication {
                             System.out.println(movie.getMovieName());
                         }
                     }
-                    break;
+                    userMenu();
                 case "5":
                     System.out.println("\nSciFi Movies:\n--------------------");
                     for (Movie movie : findAll()) {
@@ -64,14 +65,14 @@ public class MoviesApplication {
                             System.out.println(movie.getMovieName());
                         }
                     }
-                    break;
+                    userMenu();
                 default:
                     System.out.println("\nInvalid Input!");
-                    break;
+                    userMenu();
 
         }
 
-        } while (!userInput.equals("0"));
+//        } while (!userInput.equals("0"));
 
     }
 
