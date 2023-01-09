@@ -8,7 +8,7 @@ public class GradesApplication {
     public static void userInterface(HashMap<String, Student> students) {
 
         String userInput;
-        Boolean yesNo;
+        boolean yesNo;
         int num = 1;
 
         System.out.println("\nGRADE MANAGER\n--------------------");
