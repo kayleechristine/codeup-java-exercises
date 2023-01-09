@@ -19,10 +19,12 @@ public class Student {
         System.out.println("Name: " + this.name);
         return this.name;
     }
+
     public void addGrade(double score) {
         System.out.println("Got a " + score + " on the assignment!");
         this.grade.add(score);
     }
+
     public double getGradeAverage() {
         double total = 0;
         for (double score : this.grade) {
