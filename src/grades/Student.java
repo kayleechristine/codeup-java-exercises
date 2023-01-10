@@ -2,6 +2,7 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
+
     // Private Name & Grade
     private String name;
     private ArrayList<Double> grade;
@@ -25,6 +26,11 @@ public class Student {
             // System.out.println("Adding " + score + "...");
             this.grade.add(score);
         }
+    }
+
+    public ArrayList<Double> getGrades() {
+        // System.out.println("Grades: " + this.grade);
+        return this.grade;
     }
 
     public double getGradeAverage() {
