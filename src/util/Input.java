@@ -44,11 +44,4 @@ public class Input {
         return scanner.nextDouble();
     }
 
-    public static void main(String[] args) {
-
-        getInt(1, 10);
-        getDouble(0.1, 0.5);
-
-    }
-
 }
