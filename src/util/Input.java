@@ -19,24 +19,48 @@ public class Input {
     }
 
     public static int getInt(int min, int max) {
-        int userNumber;
+        System.out.printf("Please input a number between %d and %d: ", min, max);
+        int userNumber = 0;
         do {
-            System.out.printf("Please input a number between %d and %d: ", min, max);
-            userNumber = scanner.nextInt();
-        } while (userNumber > max || userNumber < min);
+            try {
+                int userInput = Integer.parseInt(getString());
+                if (userInput > min && userInput < max) {
+                    userNumber = userInput;
+                } else {
+                    System.out.println("Please input a number between the given values.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input, please enter a number.");
+            };
+        } while (userNumber == 0);
         return userNumber;
     }
 
-    public static int getInt(){
-        return scanner.nextInt();
+    public static int getInt() {
+        int userNumber = 0;
+        try {
+            userNumber = Integer.parseInt(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input, please enter a number.");
+        }
+        return userNumber;
     }
 
     public static double getDouble(double min, double max) {
-        double userNumber;
+        System.out.printf("Please input a number between %s and %s: ", min, max);
+        double userNumber = 0;
         do {
-            System.out.printf("Please input a number between %s and %s: ", min, max);
-            userNumber = scanner.nextDouble();
-        } while (userNumber > max || userNumber < min);
+            try {
+                double userInput = Double.parseDouble(getString());
+                if (userInput > min && userInput < max) {
+                    userNumber = userInput;
+                } else {
+                    System.out.println("Please input a number between the given values.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input, please enter a number.");
+            };
+        } while (userNumber == 0);
         return userNumber;
     }
 
