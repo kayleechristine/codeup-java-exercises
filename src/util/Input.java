@@ -67,4 +67,5 @@ public class Input {
     public static double getDouble() {
         return scanner.nextDouble();
     }
+
 }
