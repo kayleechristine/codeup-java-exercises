@@ -1,4 +1,5 @@
 package util;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -31,7 +32,8 @@ public class Input {
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input, please enter a number.");
-            };
+            }
+            ;
         } while (userNumber == 0);
         return userNumber;
     }
@@ -48,7 +50,7 @@ public class Input {
 
     public static double getDouble(double min, double max) {
         System.out.printf("Please input a number between %s and %s: ", min, max);
-        double userNumber = 0;
+        double userNumber = 0.0;
         do {
             try {
                 double userInput = Double.parseDouble(getString());
@@ -57,15 +59,22 @@ public class Input {
                 } else {
                     System.out.println("Please input a number between the given values.");
                 }
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | InputMismatchException e) {
                 System.out.println("Invalid input, please enter a number.");
-            };
-        } while (userNumber == 0);
+            }
+            ;
+        } while (userNumber == 0.0);
         return userNumber;
     }
 
     public static double getDouble() {
-        return scanner.nextDouble();
+        double userNumber = 0.0;
+        try {
+            userNumber = Double.parseDouble(getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input, please enter a number.");
+        }
+        return userNumber;
     }
 
 }
