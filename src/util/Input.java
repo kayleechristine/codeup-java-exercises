@@ -76,4 +76,5 @@ public class Input {
         }
         return userNumber;
     }
+
 }
